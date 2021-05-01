@@ -1,0 +1,225 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --bg-hero-color: #2f303a;
+  --bg-color: #ffffff;
+
+  --grid-item: 3;
+  --grid-about: 4;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+/*обнуление стилей */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.header-page {
+  background-color: #ffffff;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-block {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo > .word {
+  color: var(--title-text-color);
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.current {
+  color: var(--accent-color) !important;
+}
+.nav-list .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+  color: var(--accent-color);
+}
+.address-list {
+  display: flex;
+  margin-left: auto;
+}
+.address-item .address-phone {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.address-item .address-phone:hover,
+.address-item .address-phone:focus {
+  color: var(--accent-color);
+}
+.address-list .address-item:not(:last-child) {
+  margin-right: 30px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+.footer-page {
+  background-color: var(--bg-hero-color);
+}
+.flexbox {
+  display: flex;
+}
+.addres-block {
+  margin-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-page .logo > .word {
+  color: #ffffff;
+}
+.footer-page .logo {
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+address {
+  font-style: normal;
+}
+.addres-text {
+  margin-bottom: 9px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.addres-phone {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.addres-phone:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-block {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.footer-heading {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-list .social-item {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+}
+.footer-list .social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list .icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+.footer-list .social-link:hover,
+.footer-list .social-link:focus {
+  background-color: #2196f3;
+}
